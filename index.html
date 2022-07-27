@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">    
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Songo</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <!-- NavBar  -->
+        <nav class="navbar navbar-expand-lg navbar-light p-2">
+            <img class="nav-item" src="img/headerLogo.png" alt="" id="headerLogo">
+
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i id="burgerButton" class="fa-solid fa-bars" style="color: white; font-size: 35px;"></i>
+            </button>
+            <!-- Colapse  -->
+            <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                
+                <div class="offcanvas-header pt-3 px-3">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-2">
+                        <li class="nav-item mt-3 ms-auto">
+                            <i class="fa-solid fa-xmark" data-bs-dismiss="offcanvas" aria-label="Close" style="font-size: 25px; color: white; display: block; border: solid white 3px; border-radius: 15px; width: 25px; text-align: center; box-sizing: content-box; padding: 1px;"></i>
+                        </li>
+                        <li class="nav-item mx-3 mb-3">
+                            <img class="px-3 p-1 pt-0" src="img/headerLogo.png" alt="" style="height: 45px ;">
+                        </li>
+                        <li class="nav-item m-3">
+                            <a class="px-3 p-2 text-light fs-4" href="#">Discover</a>
+                        </li>
+                        <li class="nav-item m-3">
+                            <a class="px-3 p-2 text-light fs-4" href="#">Setup</a>
+                        </li>
+                        <li class="nav-item m-3">
+                            <a class="px-3 p-2 text-light fs-4" href="#">Manage</a>
+                        </li>
+                        <li class="nav-item m-3">
+                            <a class="px-3 p-2 text-light fs-4" href="#">App&nbsp;Features</a>
+                        </li>
+                        <li class="nav-item m-3">
+                            <a class="mx-3 px-3 py-2 text-dark bg-light rounded-pill fs-4" href="#">Try&nbsp;for&nbsp;free</a>
+                        </li>
+                        <li class="nav-item m-3">
+                            <a class="px-3 p-2 text-light fs-4" href="#">Login</a>
+                        </li>
+                        <li class="nav-item m-3" style="border-top: 1px solid rgba(255, 255, 255, 0.267); width: 50%;">
+                            <img class="px-3 p-3" src="img/sk flag.png" alt="" style="height: 55px;" ><span id="slovakiaMenu">Slovakia</span> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- normal  -->
+            <ul class="navbar-nav collapse navbar-collapse justify-content-end m-4">
+                <li class="nav-item m-0">
+                    <a class="px-3 p-2 text-light" href="#">Discover</a>
+                </li>
+                <li class="nav-item m-0">
+                    <a class="px-3 p-2 text-light" href="#">Setup</a>
+                </li>
+                <li class="nav-item m-0">
+                    <a class="px-3 p-2 text-light" href="#">Manage</a>
+                </li>
+                <li class="nav-item m-0">
+                    <a class="px-3 p-2 text-light" href="#">App&nbsp;Features</a>
+                </li>
+                <li class="nav-item m-0">
+                    <a class="px-3 p-2 text-dark bg-light rounded-pill " href="#">Try&nbsp;for&nbsp;free</a>
+                </li>
+                <li class="nav-item m-0">
+                    <a class="px-3 p-2 text-light" href="#">Login</a>
+                </li>
+                <li class="nav-item text-light">
+                    |
+                </li>
+                <li class="nav-item"><img src="img/sk flag.png" alt=""></li>
+            </ul>
+        </nav>
+        <!-- Header text-->
+        <div id="headerContainText">
+            <h1>Music tuning to taste of everyone who matters</h1>
+            <h3>Let all your customers to become contributors to the atmosphere in <br> your place. They will stay longer and visit you again.</h3>
+        </div>
+        <div id="headerBtns">
+            <a href="#">
+                <div class="btns" id="btnLeft">
+                    <div class="headerBtn">TRY IT FOR FREE</div>
+                    <div class="textBtn">14 day trial period</div>
+                </div>
+            </a>
+            <a href="#" class="btns">
+                <div id="btnRight">
+                    <div class="headerBtn">LEARN MORE</div>
+                    <div class="textBtn">Watch presentation video</div>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <section>
+        <!-- firstRow  -->
+        <article id="firstRowArticle">
+            <div class="articleHeader">
+                Choose the streaming solution that suits you best
+            </div>
+            <div class="containArticle">
+                <p id="firstRowParam1">
+                    Many business owners   do underestimate the importance of music in their businesses and its effect on all people around. For example, it makes employees more productive, especially younger generation. It is no news that music has a unique capacity to put people in different emotional states. Many researches have shown that background music in commercial environments affects customers to stay longer and buy more.
+                </p>
+                <p id="firstRowParam2">
+                    Background music can be used as a tool to arouse the right associations and create a retail environment that reflects the brand identity. It has also been shown to reduce the perceived waiting time and add to the impression that the company cares about its customers.
+                </p>
+                
+            </div>
+        </article>
+        <!-- secondRow  -->
+        <article id="secondRowArticle">
+            <div id="secondRowContain">
+                <div id="leftSide">
+                    <img src="img/secondRowArticle.png" alt="">
+                </div>
+                <div id="rightSide">
+                    <div class="articleHeader">
+                        What is Songo?
+                    </div>
+                    <div class="containArticle">
+                        <p>
+                            Songo is customisable music for your business, played automatically with the help of an algorithm, following the music preferences of your customers and employees.
+                        </p>
+                        <p>
+                            Songoroo is neither a passive in-store radio nor a jukebox. We developed a platform which combines the best from both concepts, presenting the customers with the opportunity to influence music playlist, but at the same time providing the business owners with variety of tools to set appropriate rules and boundaries to what kind of music can be played in their businesses,. Taking the customers’ preferences into the consideration in a fully automated fashion is exactly what differentiates Songo from other in-store radio providers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- thirdRow  -->
+        <article id="thirdRowArticle">
+            <div id="bcgThirdRow">
+                <img src="img/thirdRowBcg .png" alt="">
+            </div>
+            <div  id="thirdRowArticler">
+                What is our offer to you?
+            </div>
+            <div class="rows">
+                <div class="cell">
+                    <div class="leftSideCell">
+                        <div class="icons">
+                            <img src="img/1ico.png" alt="" id="ico1">
+                        </div>
+                    </div>
+                    <div class="rightSideCell">
+                        <div class="articleHeader">Interactive playlist</div>
+                        <div class="rowContain">
+                            Music playlist in your individual locations adjusts itself continuously based on music preferences of the present Songo app users.
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="leftSideCell">
+                        <div class="icons">
+                            <img src="img/2ico.png" alt="">
+                        </div>
+                    </div>
+                    <div class="rightSideCell">
+                        <div class="articleHeader">Business intelligence</div>
+                        <div class="rowContain">
+                            Do you want to know what kind of customers are visiting your locations or what kind of music might increase the productivity of your employees? Our tailored reports and big data analytics will give you the overview.
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="rows">
+                <div class="cell">
+                    <div class="leftSideCell">
+                        <div class="icons">
+                            <img src="img/3ico.png" alt="">
+                        </div>
+                    </div>
+                    <div class="rightSideCell">
+                        <div class="articleHeader">Music database</div>
+                        <div class="rowContain">
+                            With Songoroo, you will get access to the music database which can fulfil every musical wish your customers and employees might have. We will expand our database based on your specific regional wishes as well.
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="leftSideCell">
+                        <div class="icons">
+                            <img src="img/4ico.png" alt="">
+                        </div>
+                    </div>
+                    <div class="rightSideCell">
+                        <div class="articleHeader">Customer support</div>
+                        <div class="rowContain">
+                            With the help of our automated 24/7 monitoring system, a team of highly dedicated customer service representatives help you with any enquires that may arise.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rows">
+                <div class="cell">
+                    <div class="leftSideCell">
+                        <div class="icons">
+                            <img src="img/5ico.png" alt="">
+                        </div>
+                    </div>
+                    <div class="rightSideCell">
+                        <div class="articleHeader">Self managed targeted messages</div>
+                        <div class="rowContain">
+                            Our team is ready to help you to develop and create tailored audio and banner based messages to support your sales and marketing activities but also general public announcements  in-between the played songs.
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="leftSideCell">
+                        <div class="icons">
+                            <img src="img/6ico.png" alt="">
+                        </div>
+                    </div>
+                    <div class="rightSideCell">
+                        <div class="articleHeader">Admin dashboard</div>
+                        <div class="rowContain">
+                            One-stop-solution combining all tools to manage your music, playlists, advertisements and payments should you choose so. We can of course manage all that for you.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rows">
+                <div class="cell">
+                    <div class="leftSideCell">
+                        <div class="icons">
+                            <img src="img/7ico.png" alt="">
+                        </div>
+                    </div>
+                    <div class="rightSideCell">
+                        <div class="articleHeader">Mobile application</div>
+                        <div class="rowContain">
+                            Various features in the Songo app allows your customers and employees to influence music played in your locations.
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="leftSideCell">
+                        <div class="icons">
+                            <img src="img/8ico.png" alt="">
+                        </div>
+                    </div>
+                    <div class="rightSideCell">
+                        <div class="articleHeader">Royalty payments</div>
+                        <div class="rowContain">
+                            We take care of all aspects of dealing with the payments and administration around royalties. This ensures that only legal music is played and allows you to concentrate on your business.
+                        </div>
+                    </div>
+                </div>
+            </div>                 
+        </article>
+        <!-- fourthRow  -->
+        <article id="fourthRowArticle">
+            <div class="articleHeader" id="fourthHeader">Benefits for your business, customers and employees</div>
+            <div id="rowOfColumn">
+                <div class="column">
+                    <img src="img/column1.png" alt="">
+                    <div class="columnArticle">
+                        <div class="articleHeader">
+                            Benefits for you
+                        </div>
+                        <ul class="rowContain">
+                            <li>Customer loyalty</li>
+                            <li>Increased sales</li>
+                            <li>Improved employees productivity and engagement</li>
+                            <li>Music becomes a part of the brand</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="img/column2.png" alt="">
+                    <div class="columnArticle">
+                        <div class="articleHeader">
+                            Customer and employee benefits
+                        </div>
+                        <ul class="rowContain">
+                            <li>Enhanced customer experience and satisfaction</li>
+                            <li>Improved work place environment and atmosphere
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="img/column3.png" alt="">
+                    <div class="columnArticle">
+                        <div class="articleHeader">
+                            Additional benefits
+                        </div>
+                        <ul class="rowContain">
+                            <li>IP music rights – payment and administration of the royalties
+                            </li>
+                            <li>Analytics (big data) and reporting
+                            </li>
+                            <li>Ensuring customer privacy using sound masking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- fifthRow  -->
+        <article id="fifthRowArticle">
+            <div class="articleHeader">Advantages of Songo over other In-Store Music Solutions</div>
+            <div class="rowInFifthRow">
+                <div class="circle" id="blue"></div>
+                <div class="rightSideOfRow">
+                    <div class="articleHeader">Active role of music in business </div>
+                    <div class="rowContain">Songoroo is elevating the role of music in a business from a passive role, merely helping to create pleasant atmosphere to an active one, achieving an interactive and enjoyable experience, improving the loyalty levels of customers and engagement of the employees.</div>
+                </div>
+            </div>
+            <div class="rowInFifthRow">
+                <div class="circle" id="orange"></div>
+                <div class="rightSideOfRow">
+                    <div class="articleHeader">Interaction between Songo users </div>
+                    <div class="rowContain">Including multiple social media-like options in the mobile app helps your business to capitalise on the increased attractivness of your locations where people tend to spend more time.</div>
+                </div>
+            </div>
+            <div class="rowInFifthRow">
+                <div class="circle" id="green"></div>
+                <div class="rightSideOfRow">
+                    <div class="articleHeader">Analytics (Big Data) </div>
+                    <div class="rowContain">Various data sets and reports regarding customer demographics, behaviours and preferences are commercially useful for targeted advertising and increase sales of own products or services.</div>
+                </div>
+            </div>
+            <div class="rowInFifthRow">
+                <div class="circle" id="white"></div>
+                <div class="rightSideOfRow">
+                    <div class="articleHeader">Dynamic (Smart) playlists </div>
+                    <div class="rowContain">Playlists generated automatically are continuously adjusted based on Songo app users’ preferences physically present at the same location.</div>
+                </div>
+            </div>
+            <div id="circlesBar">
+                <div class="bars" id="firstBar">Terres- trial radio</div>
+                <div class="bars" id="secondBar">In-store radio</div>
+                <div class="bars" id="thirdBar">Jukebox</div>
+                <div class="bars" id="fourthBar">Mobile Jukebox / Public Stream
+                </div>
+                <div class="bars" id="fifthBar">Smart In-store radio</div>
+            </div>
+        </article>
+        <!-- preFooter  -->
+        <article id="preFooter">
+            <div class="articleHeader">Become a member of Songo family</div>
+            <div id="headerBtns">
+                <a href="#">
+                    <div id="btnLeft">
+                        <div class="headerBtn">TRY IT FOR FREE</div>
+                        <div class="textBtn">14 day trial period</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div id="btnRight">
+                        <div class="headerBtn">LEARN MORE</div>
+                        <div class="textBtn">Watch presentation video</div>
+                    </div>
+                </a>
+            </div>
+        </article>
+        <footer>
+            <div class="footerColumn">
+                <div class="articleHeader">Songo Solutions</div>
+                <ul class="rowContain">
+                    <a href="#">
+                        <li>Interactive in-store radio</li>
+                    </a>
+                    <a href="#">
+                        <li>Songo algorithm</li>
+                    </a>
+                    <a href="#">
+                        <li>Mobile apps</li>    
+                    </a>
+                    <a href="#">
+                        <li>Pricing	</li>    
+                    </a>
+                </ul>
+            </div>
+            <div class="footerColumn">
+                <div class="articleHeader">Portfolio</div>
+                <ul class="rowContain">
+                    <a href="#">
+                        <li>Food & Dining</li>
+                    </a>
+                    <a href="#">
+                        <li>Café & Pubs</li> 
+                    </a>
+                    <a href="#">
+                        <li>Retail</li>
+                    </a>
+                    <a href="#">
+                        <li>Hotels & Offices</li>
+                    </a>
+                    <a href="#">
+                        <li>Club & Lounge</li>
+                    </a>
+                    <a href="#">
+                        <li>Workout & Fitness</li>
+                    </a>  
+                    <a href="#">
+                        <li>Spa, Wellness & Relax</li>
+                    </a>
+                    <a href="#">
+                        <li>Public places</li>
+                    </a>
+                    <a href="#">
+                        <li>Events & Special occasions</li>
+                    </a>
+                    <a href="#">
+                        <li>… many more	</li>
+                    </a>
+                </ul>
+             </div>
+             <div class="footerColumn">
+                <div class="articleHeader">How to</div>
+                <ul class="rowContain">
+                    <a href="#">
+                        <li>App Features</li>
+                    </a>
+                    <a href="#">
+                        <li>Music Streamer Setup</li>
+                    </a>
+                    <a href="#">
+                        <li>Support</li>
+                    </a>
+                </ul>
+             </div>
+             <div class="footerColumn">
+                <div class="articleHeader">Company</div>
+                <ul class="rowContain">
+                    <a href="#">
+                        <li>About us</li>
+                    </a>
+                    <a href="#">
+                        <li>Testimonials</li>
+                    </a>
+                    <a href="#">
+                        <li>Testimonials</li>
+                    </a>
+                    <a href="#">
+                        <li>Partnership</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                    <a href="#">
+                        <li>Careers</li>
+                    </a>
+                    
+                    
+                </ul>
+                <div class="footerWrapper">
+                    <a href="#">
+                        <p id="terms">Terms of Use</p>
+                    </a>
+                    <a href="#">
+                        <p id="privacy">Privacy Policy</p>
+                    </a>
+                </div>
+             </div>
+             <div class="footerColumn">
+                <div class="articleHeader">Connect</div>
+                <ul class="rowContain">
+                    <a href="#">
+                        <li>Facebook</li>
+                    </a>
+                    <a href="#">
+                        <li>LinkedIn</li>
+                    </a>
+                    <a href="#">
+                        <li>Instagram</li>
+                    </a>
+                    <a href="#">
+                        <li>Blog</li>
+                    </a>
+                    
+                </ul>
+             </div>
+        </footer>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
